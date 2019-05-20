@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>VetsinTech Web Dev Pre-Work Task</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+  <div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/4DAbnHv6VHs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+<div id="vidtop-content">
+  <div class="vid-info">
+<script>
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '360',
+      width: '640',
+      videoId: '4DAbnHv6VHs'
+    });
+  }
+</script>
+
+	  <h1>VetsinTech Web Dev Pre-Work Task</h1>
+	  <a href="http://www.vetsintech.com" target="_blank">VetsinTech</a></b> supports our current and returning veterans with re-integration 
+             services and by connecting them to the national technology ecosystem.
+     <p><b>ViT</b> is committed to bringing together a tech-specific network, 
+             resources, and programs for our veterans interested in: 
+         <b><br>-Education<br>-Entrepreneurship<br> and Employment</b><br><br> - the <b>3E’s!</b></p>
+<h1>Simple Calculator</h1><br>Enter values in the the two textboxes and press the equal button to see the result.<br>
+<form name="calculator">
+         <table>
+            <tr>
+               <td colspan="4">
+                  <input type="text" name="display" id="display" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
+               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
+               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
+               <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
+               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
+               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
+               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
+               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
+               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
+               <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''"></td>
+               <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'"></td>
+               <td><input type="button" name="doit" value="=" onclick="calculator.display.value = eval(calculator.display.value)"></td>
+               <td><input type="button" class="operator" name="div" value="/" onclick="calculator.display.value += '/'"></td>
+            </tr>
+         </table>
+      </form>
+  </div>
+</div>
+
+</body>
+</html>

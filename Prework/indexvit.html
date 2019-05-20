@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>VetsinTech Web Dev Pre-Work Task</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  
+</head>
+  
+
+  <script>
+  	
+    //This is a comment
+    function calculateFunction(){
+    
+    //Get value from first textBox  
+    var a = document.getElementById("input1id").value;
+      
+    //Get value from second textBox
+    var b = document.getElementById("input2id").value;
+    
+    //Add those two values
+    var sum = parseFloat(a) + parseFloat(b);
+    
+    //Print the result to the page
+    document.write(sum);
+      
+    }
+  </script>
+
+<body>
+	<div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/4DAbnHv6VHs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+<div id="vidtop-content">
+<div class="vid-info">
+	  <h1>VetsinTech Web Dev Pre-Work Task</h1>
+	  <a href="www.vetsintech.com" target="_blank">VetsinTech</a></b> supports our current and returning veterans with re-integration 
+             services and by connecting them to the national technology ecosystem.
+     <p><b>ViT</b> is committed to bringing together a tech-specific network, 
+             resources, and programs for our veterans interested in: 
+         <b><br>-Education<br>-Entrepreneurship<br> and Employment</b><br><br> - the <b>3E’s!</b></p>
+<p><h1>Simple Calculator</h1><br>Enter values in the the two textboxes and press the button to see the result.</p>
+<input type="text" name="input1" id="input1id" />
+                                               
+x
+<input type="text" name="input2" id="input2id" />                                            
+<input type="submit" name="calculateButton" id="calculateButton" onClick="calculateFunction()" value="Calculate Now" />
+  </div>
+</div>
+
+</body>
+</html>
